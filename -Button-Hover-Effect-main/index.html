@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern CSS Glowing Button Hover Effect</title>
+</head>
+
+<body>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Italianno&family=Poppins:wght@200;300;400;500;600;700;800&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: #27282c;
+        }
+
+        a {
+            position: relative;
+            background: #444;
+            color: #fff;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-size: 1.5em;
+            letter-spacing: 0.1em;
+            padding: 10px 30px;
+            transition: 0.5s;
+
+        }
+
+        a:hover {
+            letter-spacing: 0.25em;
+        }
+
+        a::before {
+            content: '';
+            position: absolute;
+            inset: 2px;
+            background: #27282c;
+
+        }
+
+        a span {
+            position: relative;
+            z-index: 1;
+        }
+
+        a i {
+            position: absolute;
+            inset: 0;
+            display: block;
+
+        }
+
+        a i::before {
+            content: '';
+            position: absolute;
+            border: 2px solid #fff;
+            width: 10px;
+            height: 5px;
+
+        }
+    </style>
+    <a href="#"> <span>Button</span> <i></i></a>
+
+</body>
+
+</html>
